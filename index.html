@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tier Maker - WEB APP</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <div class="top-bar">
+        <div class="logo">Tier Maker</div>
+        <div class="top-actions">
+            <input type="file" id="file-input" multiple accept="image/*">
+            <button class="btn btn-blue" id="upload-btn">Upload Image</button>
+            <button class="btn btn-dark" id="add-tier-btn">+ Add Tier</button>
+            <button class="btn btn-red" id="reset-btn">New</button>
+        </div>
+    </div>
+
+    <div class="pool-area">
+        <div class="pool-header">
+            <span class="pool-title">Not Yet Ranked</span>
+            <button class="btn btn-shuffle" id="shuffle-btn">Shuffle</button>
+        </div>
+        <div class="tier-content pool-content drop-zone" id="pool"></div>
+    </div>
+
+    <div class="tiers-wrapper" id="tiers"></div>
+</div>
+
+<script src="js/dragdrop.js"></script>
+<script src="js/tier.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
